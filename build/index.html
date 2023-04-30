@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to firebase</title>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCFoOcyV6iLYPnd17EEWvg-MgU9lJxE1fM",
+        authDomain: "cloud-function-tutorial-cade6.firebaseapp.com",
+        projectId: "cloud-function-tutorial-cade6",
+        storageBucket: "cloud-function-tutorial-cade6.appspot.com",
+        messagingSenderId: "791652066782",
+        appId: "1:791652066782:web:539c1903789f5d2828694f",
+        measurementId: "G-JC5K90W15X"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+  </head>
+  <body>
+    <div id="message">
+      <h2>Hello World</h2>
+    </div>
+  </body>
+</html>
